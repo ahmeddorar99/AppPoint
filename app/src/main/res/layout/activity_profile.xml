@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                app:civ_border_color="#fffefe"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:onClick="fun"
+                android:background="@drawable/customborder2"
+                android:text="Activation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                android:textColor="#fb020a"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="First Name"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/fname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:enabled="true"
+                android:focusable="false"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="First Name"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Last Name"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/lname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:enabled="true"
+                android:focusable="false"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Last Name"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Phone"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/phone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:enabled="true"
+                android:focusable="false"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Phone"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:enabled="true"
+                android:focusable="false"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Gender"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Bithdate"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/birthdate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:enabled="true"
+                android:focusable="false"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Bithdate"
+                android:inputType="none"
+                android:singleLine="true"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/Cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:ems="10"
+                android:enabled="true"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnupdate"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/customborder2"
+                    android:text="Change Information"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                    android:textColor="#504ef4" />
+
+                <Button
+                    android:id="@+id/btnsave"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/customborder2"
+                    android:text="Save Information"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                    android:textColor="#504ef4"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btndelete"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/customborder2"
+                android:text="Delete Account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+                android:textColor="#fb020a"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
